@@ -11,6 +11,10 @@ import { RegisterComponent } from './register/register.component';
 import { DashFeedComponent } from './dash-feed/dash-feed.component';
 import { DashRequestComponent } from './dash-request/dash-request.component';
 import { DashHistoryComponent } from './dash-history/dash-history.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { DashHistoryComponent } from './dash-history/dash-history.component';
     RegisterComponent,
     DashFeedComponent,
     DashRequestComponent,
-    DashHistoryComponent
+    DashHistoryComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
