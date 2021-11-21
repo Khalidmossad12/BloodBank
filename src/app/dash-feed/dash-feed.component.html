@@ -1,1 +1,101 @@
-<p>dash-feed works!</p>
+<section id="dashHistory" class="py-5">
+  <div class="container">
+      <div class="feed_History">
+        <div class="row g-4 justify-content-center">
+          <div class="col-xl-6">
+            <div class="post text-end">
+
+              <div class="person p-3 d-flex justify-content-end align-items-center">
+                <a href="#">
+                  <div class="per-inf">
+                    <h3>Arch Abd Elrahman Kasem</h3>
+                    <p class="mb-0"><b>Elsalam Specialized Hospital</b> فى +B يبحث عن </p>
+                    <small>6 months ago</small>
+                  </div>
+                </a>
+                <div class="per-img">
+                  <img src="assets/img/profile-img.jpg" alt="">
+                </div>
+              </div>
+
+              <p class="p-3">A 14-year-old child undergoes a serious operation in the spine and needs 4 bags of B + type</p>
+
+              <div class="details d-flex justify-content-end align-items-center">
+                <div class="details-inf me-3">
+                  <h3>مطلوب متبرعين بالدم</h3>
+                  <p class="mb-0 ">Cairo Governorate, Al Salam First, Elsalam Specialized Hospital<i class="fas fa-map-marker-alt ms-2"></i></p>
+                </div>
+                <div class="details-img">
+                  <span>+B</span>
+                </div>
+              </div>
+
+              <div class="num-comments text-start d-flex justify-content-between py-1 px-3">
+                <small>Comments <span>0</span></small>
+                <span id="emoj"></span>
+              </div>
+
+              <div class="contact py-2 px-3">
+                <ul class="list-unstyled mb-0 d-flex ">
+                  <li (click)="likes_And_Close()">like<i class="far fa-thumbs-up ms-1"></i></li>
+                  <li (click)="Comment_And_Close()">Comment<i class="far fa-comment-alt ms-1"></i></li>
+                  <li (click)="Share_And_Close()">Share<i class="fas fa-share-alt ms-1"></i></li>
+                </ul>
+                <div class="list_of_comments d-non">
+                  <div class="main-comments position-relative top-50 start-50 translate-middle">
+                    <div class="comments d-flex flex-column rounded-1 m-auto">
+                      <div class="comm-head d-flex justify-content-between align-items-center p-3 text-white">
+                        <i (click)="Comment_And_Close()" class="fas fa-times"></i>
+                        <span class="fw-bold">Comments</span>
+                      </div>
+                      <div class="comm-body d-flex justify-content-center align-items-center flex-column flex-grow-1 bg-white px-3 py-2">
+                        <img src="assets/img/no_blood_activity.svg" alt="">
+                        <p class="mb-0 fs-2 ">No Comments</p>
+                        <small>Right Your Comment</small>
+                      </div>
+                      <div class="comm-footer d-flex justify-content-between align-items-center px-3 py-2">
+                        <span><i class="fab fa-telegram-plane"></i></span>
+                        <div class="arrow-input position-relative">
+                          <input type="text" placeholder="What do you have ?">
+                          <div class="left_arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="share d-non">
+                  <div class="position-relative top-50 start-50 translate-middle">
+                    <div class="comments d-flex flex-column rounded-1 m-auto">
+                      <div class="comm-head d-flex justify-content-between align-items-center p-3 text-white">
+                        <i (click)="Share_And_Close()" class="fas fa-times"></i>
+                        <span class="fw-bold">Share Blood Request</span>
+                      </div>
+                      <div class="comm-body d-flex justify-content-center bg-white px-3 py-2">
+                        <ul class="list-unstyled mb-0 d-flex align-items-center">
+                          <li class="me-1"><i class="fab fa-facebook-f"></i></li>
+                          <li class="me-1"><i class="fab fa-twitter"></i></li>
+                          <li class="me-1"><i class="fab fa-whatsapp"></i></li>
+                          <li class="me-1"><i class="fab fa-instagram"></i></li>
+                          <li><i class="far fa-clone"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="likes d-non">
+                  <ul class="list-unstyled mb-0 d-flex">
+                    <li class="emojs" (click)="likes_And_Close()"><i class="fas fa-heart fa-2x me-2"></i></li>
+                    <li class="emojs" (click)="likes_And_Close()"><i class="far fa-thumbs-up fa-2x me-2"></i></li>
+                    <li class="emojs" (click)="likes_And_Close()"><i class="far fa-laugh-squint fa-2x me-2"></i></li>
+                    <li class="emojs" (click)="likes_And_Close()"><i class="far fa-sad-tear fa-2x me-2"></i></li>
+                    <li class="emojs" (click)="likes_And_Close()"><i class="far fa-surprise fa-2x "></i></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
