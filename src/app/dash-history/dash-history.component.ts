@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var $:any;
 @Component({
   selector: 'app-dash-history',
   templateUrl: './dash-history.component.html',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class DashHistoryComponent implements OnInit {
 
   constructor() { }
+  Toggle(){
+    $('button').next('.nav-collapse').slideToggle(200);
+  }
 
   ngOnInit(): void {
   }
