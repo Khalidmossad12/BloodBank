@@ -1,0 +1,25 @@
+.register
+{
+    background-color: #ff3f62;
+    height: 100vh;
+    overflow: hidden;
+}
+img
+{
+    height: 100vh;
+}
+input:focus {border:none !important;}
+select , select:focus
+{
+    color:#797676;
+}
+button
+{
+    color:#ff3f62 ;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: #f76580 !important;
+    color: #fff;
+}
