@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
 declare var $:any;
->>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
->>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
+
 @Component({
   selector: 'app-dash-feed',
   templateUrl: './dash-feed.component.html',
@@ -18,16 +11,8 @@ export class DashFeedComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-<<<<<<< HEAD
   }
 
-=======
-<<<<<<< HEAD
-  }
-
-=======
-   
-  }
   Toggle(){
     $('button').next('.nav-collapse').slideToggle(200);
   }
@@ -41,6 +26,6 @@ export class DashFeedComponent implements OnInit {
     $('.likes').fadeToggle(200);
     // $('#emoj').html($('.likes .emojs').html());
   }
->>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
->>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
-}
+  }
+
+   

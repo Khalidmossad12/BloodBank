@@ -1,101 +1,78 @@
-nav
-{
-  background-color: #F65E68  ;
-  position: fixed;
-  width: 100%;
-  transition:  background-color .5s;
+nav {
+    position: fixed;
+    width: 100%;
+    transition: background-color .5s;
+    z-index: 100;
 }
 
-.demo
-{
-  padding: 80px 0 !important;
+i {
+    font-size: 40px;
+    padding-right: 20px;
+    color: white;
+    transition: color .5s;
+    animation: animate 1s linear infinite;
 }
 
-
-
-i{
-  font-size: 40px;
-  padding-right:20px ;
-  color: white;
-  transition: color .5s;
-  animation: animate 1s linear infinite;
+h4 {
+    color: white;
+    transition: color .5s;
 }
 
-h4{
-  color: white;
-  transition: color .5s;
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.4);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1.4);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-@keyframes animate
-{
-  0%{
-    transform:  scale(1);
-  }
-
-  25%{
-    transform:  scale(1);
-  }
-
-  30%{
-    transform:  scale(1.4);
-  }
-
-  50%{
-    transform:  scale(1.2);
-  }
-
-  70%{
-    transform:  scale(1.4);
-  }
-
-  90%{
-    transform:  scale(1);
-  }
-
-  100%{
-    transform:  scale(1);
-  }
+li {
+    padding: 15px 20px;
+    position: relative;
 }
 
-li
-{
-  padding: 15px 20px ;
-  position: relative;
+a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .5s;
 }
 
-a
-{
-  color: #ffff ;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color .5s;
+a::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 78%;
+    left: 4px;
+    width: 0%;
+    height: 1.5px;
+    transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transition: all .5s ease-in-out;
 }
 
-
-a::after
-{
-  content: "";
-  background-color:white;
-  position: absolute;
-  top: 78%;
-  left: 4px;
-  width: 0%;
-  height: 1.5px;
-  transform-origin : right center ;
-  -webkit-transform-origin: right center;
-  transition: all .5s ease-in-out;
-}
-a:hover:after
-{
-  width: 90%;
-  transform-origin : right center ;
-  -webkit-transform-origin: left center;
+a:hover:after {
+    width: 90%;
+    transform-origin: right center;
+    -webkit-transform-origin: left center;
 }
 
-
-
-h1
-{
-  color: white  ;
+h1 {
+    color: white;
 }
-

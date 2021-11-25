@@ -1,51 +1,38 @@
-<<<<<<< HEAD
-<p>register works!</p>
-=======
-<<<<<<< HEAD
-<div class="register">
-    <div class="row">
-        <div class="col-md-6 ">
-            <div class="register-form px-0 mx-0">
-                <img src="../../assets/images/image-2.jpg" alt="register-image">
-            </div>
-        </div>
-        <div class="col-md-6">
+<div class="register py-5">
+    <div class="container">
+
+        <div>
             <div class="register-form">
                 <h2 class="text-center text-white mt-5">Register Now</h2>
-                <p class="text-center text-white">Join Our WonderFul Community and start Saving Lives.
-                    You Can Become Someone's unkown but all important Hero.
+                <p class="text-center text-white">Join Our WonderFul Community and start Saving Lives. You Can Become Someone's unkown but all important Hero.
                 </p>
-                <form [formGroup]='registerForm' class="mt-5 me-2"  (ngSubmit)="registerFormFun(registerForm)">
-                    <div class="row">
+                <form [formGroup]='registerForm' class="mt-5 me-2" (ngSubmit)="registerFormFun(registerForm)">
+                    <div class="row w-75 m-auto">
                         <div class="col-md-6 mt-1">
-                            <input type="text" [class.is-valid]="registerForm.get('firstName')?.status == 'VALID'"
-                                [class.is-invalid]="registerForm.get('firstName')?.status == 'INVALID' && registerForm.get('firstName')?.touched"
-                                placeholder="Enter First Name" formControlName="firstName" class="form-control">
+                            <input type="text" [class.is-valid]="registerForm.get('firstName')?.status == 'VALID'" [class.is-invalid]="registerForm.get('firstName')?.status == 'INVALID' && registerForm.get('firstName')?.touched" placeholder="Enter First Name" formControlName="firstName"
+                                class="form-control">
                             <div class="alert alert-danger my-1" *ngIf="registerForm.get('firstName')?.errors!=null
                                       && registerForm.get('firstName')?.touched">
-                                <p *ngIf="registerForm.get('firstName')?.errors?.required" class="py-0">FirstName is
-                                    required</p>
+                                <p *ngIf="registerForm.get('firstName')?.errors?.required" class="py-0">FirstName is required
+                                </p>
                                 <p *ngIf="registerForm.get('firstName')?.errors?.maxlength">FirstName maxlength is 15
                                 </p>
                                 <p *ngIf="registerForm.get('firstName')?.errors?.minlength">FirstName minlength is 3</p>
                             </div>
                         </div>
                         <div class="col-md-6 mt-1">
-                            <input type="text" [class.is-valid]="registerForm.get('lastName')?.status == 'VALID'"
-                                [class.is-invalid]="registerForm.get('lastName')?.status == 'INVALID' && registerForm.get('lastName')?.touched"
-                                placeholder="Enter Last Name" formControlName="lastName" class="form-control">
+                            <input type="text" [class.is-valid]="registerForm.get('lastName')?.status == 'VALID'" [class.is-invalid]="registerForm.get('lastName')?.status == 'INVALID' && registerForm.get('lastName')?.touched" placeholder="Enter Last Name" formControlName="lastName"
+                                class="form-control">
                             <div class="alert alert-danger my-1" *ngIf="registerForm.get('lastName')?.errors!=null
                                       && registerForm.get('lastName')?.touched">
-                                <p *ngIf="registerForm.get('lastName')?.errors?.required" class="py-0">lastName is
-                                    required</p>
-                                <p *ngIf="registerForm.get('lastName')?.errors?.maxlength">lastName maxlength is 15</p>
-                                <p *ngIf="registerForm.get('lastName')?.errors?.minlength">lastName minlength is 3</p>
+                                <p *ngIf="registerForm.get('lastName')?.errors?.required" class="py-0">LastName is required
+                                </p>
+                                <p *ngIf="registerForm.get('lastName')?.errors?.maxlength">LastName maxlength is 15</p>
+                                <p *ngIf="registerForm.get('lastName')?.errors?.minlength">LastName minlength is 3</p>
                             </div>
                         </div>
                         <div class="col-md-6 mt-1">
-                            <input type="email" [class.is-valid]="registerForm.get('email')?.status == 'VALID'"
-                                [class.is-invalid]="registerForm.get('email')?.status == 'INVALID' && registerForm.get('email')?.touched"
-                                placeholder="Enter Your Email" formControlName="email" class="form-control mt-3 mb-1">
+                            <input type="email" [class.is-valid]="registerForm.get('email')?.status == 'VALID'" [class.is-invalid]="registerForm.get('email')?.status == 'INVALID' && registerForm.get('email')?.touched" placeholder="Enter Your Email" formControlName="email" class="form-control mt-3 mb-1">
                             <div class="alert alert-danger" *ngIf="registerForm.get('email')?.errors!=null
                                       && registerForm.get('email')?.touched">
                                 <p *ngIf="registerForm.get('email')?.errors?.required">Email is required</p>
@@ -54,13 +41,11 @@
 
                         </div>
                         <div class="col-md-6 mt-1">
-                            <input type="number" [class.is-valid]="registerForm.get('phoneNumber')?.status == 'VALID'"
-                            [class.is-invalid]="registerForm.get('phoneNumber')?.status == 'INVALID' && registerForm.get('phoneNumber')?.touched"
-                             placeholder="Enter Your phoneNumber" formControlName="phoneNumber" class="form-control mt-3 mb-1">
-                            <div class="alert alert-danger"
-                             *ngIf="registerForm.get('phoneNumber')?.errors!=null
+                            <input type="tel" [class.is-valid]="registerForm.get('phoneNumber')?.status == 'VALID'" [class.is-invalid]="registerForm.get('phoneNumber')?.status == 'INVALID' && registerForm.get('phoneNumber')?.touched" placeholder="Enter Your Phone Number" formControlName="phoneNumber"
+                                class="form-control mt-3 mb-1">
+                            <div class="alert alert-danger" *ngIf="registerForm.get('phoneNumber')?.errors!=null
                              && registerForm.get('phoneNumber')?.touched">
-                                <p *ngIf="registerForm.get('phoneNumber')?.errors?.required">phoneNumber is required</p>
+                                <p *ngIf="registerForm.get('phoneNumber')?.errors?.required">Phone Number is required</p>
                             </div>
                         </div>
                         <div class="col-md-12 mt-1">
@@ -71,23 +56,20 @@
                              <option value="Alexandria">Alexandria</option>
                             <option value="Aswan">Aswan</option>
                             </select>
-                            <div class="alert alert-danger"
-                             *ngIf="registerForm.get('city')?.errors!=null
+                            <div class="alert alert-danger" *ngIf="registerForm.get('city')?.errors!=null
                              && registerForm.get('city')?.touched">
-                                <p *ngIf="registerForm.get('city')?.errors?.required">city is required</p>
+                                <p *ngIf="registerForm.get('city')?.errors?.required">City is required</p>
                             </div>
                         </div>
                         <div class="col-md-12 mt-1">
-                            <input type="text" [class.is-valid]="registerForm.get('location')?.status == 'VALID'"
-                            [class.is-invalid]="registerForm.get('location')?.status == 'INVALID' && registerForm.get('location')?.touched"
-                             placeholder="Enter Your location" formControlName="location" class="form-control mt-3 mb-1">
-                            <div class="alert alert-danger"
-                             *ngIf="registerForm.get('location')?.errors!=null
+                            <input type="text" [class.is-valid]="registerForm.get('location')?.status == 'VALID'" [class.is-invalid]="registerForm.get('location')?.status == 'INVALID' && registerForm.get('location')?.touched" placeholder="Enter Your location" formControlName="location"
+                                class="form-control mt-3 mb-1">
+                            <div class="alert alert-danger" *ngIf="registerForm.get('location')?.errors!=null
                              && registerForm.get('location')?.touched">
                                 <p *ngIf="registerForm.get('location')?.errors?.required">location is required</p>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 mt-1">
                             <input placeholder="Choose Your bloodGroup..." list="bloodGroup" name="browser" id="browser" class="form-control mt-3 mb-1">
                             <datalist id="bloodGroup">
                               <option value="A"></option>
@@ -97,16 +79,15 @@
                             </datalist>
                         </div>
                         <div class="col-md-12 mt-1">
-                            <input type="password" [class.is-valid]="registerForm.get('password')?.status == 'VALID'"
-                                [class.is-invalid]="registerForm.get('password')?.status == 'INVALID' && registerForm.get('password')?.touched"
-                                placeholder="Enter Last Name" formControlName="password" class="form-control">
+                            <input type="password" [class.is-valid]="registerForm.get('password')?.status == 'VALID'" [class.is-invalid]="registerForm.get('password')?.status == 'INVALID' && registerForm.get('password')?.touched" placeholder="Password" formControlName="password"
+                                class="form-control mt-3 mb-1">
                             <div class="alert alert-danger my-1" *ngIf="registerForm.get('password')?.errors!=null
                                       && registerForm.get('password')?.touched">
-                                <p *ngIf="registerForm.get('password')?.errors?.required" class="py-0">password is required</p>
+                                <p *ngIf="registerForm.get('password')?.errors?.required" class="py-0">Password is required</p>
                             </div>
                         </div>
                         <div class="col-md-12 mt-1">
-                            <button class="form-control border-0 mt-3 bg-white" type="submit" [disabled]= 'registerForm.invalid'>Submit</button>
+                            <button class="form-control border-0 mt-3 bg-white" type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -115,7 +96,3 @@
         </div>
     </div>
 </div>
-=======
-<p>register works!</p>
->>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
->>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514

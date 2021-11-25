@@ -1,16 +1,23 @@
-a{
-    text-decoration: none;
-    color: #f65E68;
-    font-size: 18px;
-}
-ul{
-    list-style: none;
-}
-button{
-    background-color: #f65E68;
-    color: #fff;
-    border: 1px solid #f65E68;
-}
-textarea{
-    resize: none;
-}
+    section {
+        background-color: #f65E68;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    button {
+        color: #f65E68;
+        border: 1px solid #f65E68;
+        border-radius: 4px;
+    }
+    
+    textarea {
+        resize: none;
+    }

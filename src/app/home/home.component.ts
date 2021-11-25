@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 import { Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
->>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
->>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
 
 @Component({
   selector: 'app-home',
@@ -14,14 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-<<<<<<< HEAD
 
-  constructor() { }
-=======
-<<<<<<< HEAD
-
-  constructor() { }
-=======
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -51,20 +38,12 @@ export class HomeComponent implements OnInit {
   }
 
   constructor(private _Router:Router) { }
->>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
->>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
+
 
   ngOnInit(): void {
   }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
   register(){
     this._Router.navigate(["/register"]);
   }
-
->>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
->>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
 }

@@ -1,13 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
 declare var $:any;
->>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
->>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -18,10 +12,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
 
     let navOffset = $(".demo").offset().top
     $(window).scroll(function() {
@@ -36,7 +27,7 @@ export class NavbarComponent implements OnInit {
         // })
       }
       else{
-        $("nav").css("backgroundColor" , "#F65E68")
+        $("nav").css("backgroundColor" , "transparent")
         $("a").css("color" , "white")
         $(".logo").css("color" , "white")
         $("i").css("color" , "white")
@@ -46,8 +37,7 @@ export class NavbarComponent implements OnInit {
         // })
       }
     })
->>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
->>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
+
   }
 
 }
