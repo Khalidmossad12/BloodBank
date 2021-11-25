@@ -1,0 +1,32 @@
+.login
+{
+    background-color: #ff3f62;
+    height: 100%;
+    padding-bottom: 50px;
+
+}
+
+.container
+{
+    height: 100%;
+    background-color: #fff;
+
+
+}
+button
+{
+    background-color: #f76580 !important;
+    color: #fff;
+    cursor: pointer;
+}
+input
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ff3f62;
+}
+h2,p
+{
+    text-align: center;
+    color: #ff3f62;
+}
