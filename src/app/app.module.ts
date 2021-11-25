@@ -11,6 +11,17 @@ import { RegisterComponent } from './register/register.component';
 import { DashFeedComponent } from './dash-feed/dash-feed.component';
 import { DashRequestComponent } from './dash-request/dash-request.component';
 import { DashHistoryComponent } from './dash-history/dash-history.component';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import { ReactiveFormsModule } from '@angular/forms';
+=======
+import { NotfoundComponent } from './notfound/notfound.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+>>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
+>>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
 
 @NgModule({
   declarations: [
@@ -22,11 +33,31 @@ import { DashHistoryComponent } from './dash-history/dash-history.component';
     RegisterComponent,
     DashFeedComponent,
     DashRequestComponent,
+<<<<<<< HEAD
     DashHistoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+=======
+<<<<<<< HEAD
+    DashHistoryComponent
+=======
+    DashHistoryComponent,
+    NotfoundComponent
+>>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+<<<<<<< HEAD
+    ReactiveFormsModule
+=======
+    CarouselModule,
+    BrowserAnimationsModule,
+    RouterModule
+>>>>>>> 27c3045274e5b17b1c0994e8ad85e4e3a4f2c994
+>>>>>>> 25c63bb2b4ca945dc59132b0a58953b9cbef0514
   ],
   providers: [],
   bootstrap: [AppComponent]
