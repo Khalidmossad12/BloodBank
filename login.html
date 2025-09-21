@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login</title>
+    <meta charset="utf-8">
+    <!-- For Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This meta make document refresh every 30 seconds  -->
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <meta name="author" content="Omar Elmokhtar" />
+    <meta name="description" content="Blood Bank" />
+    <meta name="keywords" content="html,css,js,jquery,bootstrap5" />
+    <!-- Page icon Link -->
+    <link rel="icon" href="img/favicon2.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo&family=Readex+Pro&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Login Css File -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <!-- Start Navbar -->
+    <nav id="navbar-clone" class="navbar py-3">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo/savelife-red.svg" alt="BloodBank_Logo">
+                <div>
+                    <h3>حياتكم تهمنا</h3>
+                    <small>اتصل</small>
+                </div>
+            </a>
+            <ul class="links d-xl-flex d-none">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="volunteer.html">المتطوعين</a></li>
+                <li><a href="lifeFeed.html">طلبات دم عاجلة</a></li>
+                <li>
+                    <a href="Donate_Money.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">تبرع<i class="fas fa-angle-down me-2"></i></a>
+                    <ul class="dropdown-menu box" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item rounded" href="Donate_Money.html">تبرع بالأموال</a></li>    
+                        <li><a class="dropdown-item rounded" href="blood.donation.html">تبرع بالدم</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">أكثر<i class="fas fa-angle-down me-2"></i></a>
+                    <ul class="dropdown-menu box" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item rounded" href="about.html">معلومات عنا</a></li>
+                        
+                        
+                        <li><a class="dropdown-item rounded" href="How-App-Work.html">كيف يعمل التطبيق</a></li>
+                        <li><a class="dropdown-item rounded" href="NewsStory.html">أخبار</a></li>
+                        <li><a class="dropdown-item rounded" href="story.html">قصص</a></li>
+                        <li><a class="dropdown-item rounded" href="#">متتبع فيروس كورونا المباشر</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+
+            <div class="btns d-xl-block d-none">
+                <a href="login.html" class="btn">تسجيل الدخول</a>
+                <!-- <a href="#" class="btn">تسجيل الخروج</a> -->
+                <a href="dash-profile.html" target="_blank" class="btn">لوحة التحكم</a>
+            </div>
+            <div class="bars d-xl-none d-block">
+                <i class="fas fa-bars " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>
+            </div>
+        </div>
+    </nav>
+
+    <nav  class="navbar py-3 ">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo/savelife-light.svg" alt="BloodBank_Logo">
+                <div>
+                    <h3>حياتكم تهمنا</h3>
+                    <small>اتصل</small>
+                </div>
+            </a>
+            <ul class="links d-xl-flex d-none">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="volunteer.html">المتطوعين</a></li>
+                <li><a href="lifeFeed.html">طلبات دم عاجلة</a></li>
+                <li>
+                    <a href="Donate_Money.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">تبرع<i class="fas fa-angle-down me-2"></i></a>
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item rounded" href="Donate_Money.html">تبرع بالأموال</a></li>
+                        <li><a class="dropdown-item rounded" href="blood.donation.html">تبرع بالدم</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">أكثر<i class="fas fa-angle-down me-2"></i></a>
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item rounded" href="about.html">معلومات عنا</a></li>
+                        
+                        
+                        <li><a class="dropdown-item rounded" href="How-App-Work.html">كيف يعمل التطبيق</a></li>
+                        <li><a class="dropdown-item rounded" href="NewsStory.html">أخبار</a></li>
+                        <li><a class="dropdown-item rounded" href="story.html">قصص</a></li>
+                        <li><a class="dropdown-item rounded" href="#">متتبع فيروس كورونا المباشر</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+
+            <div class="btns d-xl-block d-none">
+                <a href="login.html" class="btn">تسجيل الدخول</a>
+                <!-- <a href="#" class="btn">تسجيل الخروج</a> -->
+                <a href="dash-profile.html" target="_blank" class="btn">لوحة التحكم</a>
+            </div>
+
+            <div class="bars d-xl-none d-block">
+                <i class="far fa-bars " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>
+                
+                <div class="offcanvas bg-white offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header box">
+                        <div class="logo">
+                            <img src="img/logo/savelife-red.svg" alt="BloodBank_Logo">
+                            <h3>حياتكم تهمنا</h3>
+                        </div>
+                    <i class="far fa-times" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></i>    
+                    </div>
+                    <div class="offcanvas-body">
+                        <div></div>
+
+                        <div>
+                            <ul class="canv_links flex-column text-dark mb-5">
+                                <li><a href="index.html"><i class="fas fa-home ms-2"></i>الصفحة الرئيسية</a></li>
+                                <li><a href="volunteer.html"><i class="fas fa-users ms-2"></i>المتطوعين</a></li>
+                                <li><a href="lifeFeed.html"><i class="fas fa-heartbeat ms-2"></i>طلبات دم عاجلة </a></li>
+                                <li class="position-relative">
+                                    <a href="Donate_Money.html" id="offcanvasNavbarDropdown" class="one" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><i class="fas fa-donate ms-2"></i>تبرع<i class="fas fa-angle-down one me-2"></i></a>
+                                    <ul class="dropdown-menu shadw" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item rounded" href="Donate_Money.html">تبرع بالأموال</a></li>
+                                        <li><a class="dropdown-item rounded" href="blood.donation.html">تبرع بالدم</a></li>
+                                    </ul>
+                                </li>
+                                <li class="position-relative">
+                                    <a href="about.html" id="offcanvasNavbarDropdown" class="two" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-info-circle ms-2"></i>أكثر<i class="fas fa-angle-down two me-2"></i></a>
+                                    <ul class="dropdown-menu shadw" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item rounded" href="about.html">معلومات عنا</a></li>
+                                        
+                                        
+                                        <li><a class="dropdown-item rounded" href="How-App-Work.html">كيف يعمل التطبيق</a></li>
+                                        <li><a class="dropdown-item rounded" href="NewsStory.html">أخبار</a></li>
+                                        <li><a class="dropdown-item rounded" href="story.html">قصص</a></li>
+                                        <li><a class="dropdown-item rounded" href="#">متتبع فيروس كورونا المباشر</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html"><i class="fab fa-facebook-messenger ms-2"></i>تواصل معنا</a></li>
+                            </ul>
+
+                            <div class="btns">
+                                <a href="dash-profile.html" target="_blank" class="btn w-100">لوحة التحكم</a>
+                                <!-- <a href="#" class="btn w-100 my-2">تسجيل الخروج</a> -->
+                                <a href="login.html" class="btn w-100">تسجيل الدخول</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- For Loading -->
+    <div class="loading justify-content-center align-items-center">
+        <img src="img/logo/savelife-light.svg" alt="BloodBank_Logo">
+    </div>
+    <!-- End -->
+
+    <main>
+        <!-- SignIn and Forget password -->
+        <section class=" sign-In-box main-box shadow-lg back-gradient ">
+            <div class="master-img-signIn d-lg-flex d-none">
+                <div class="title text-white mt-5">
+                    <h3 class="fs-1  mb-2 text-center">حياتكم تهمنا</h3>
+                    <p>انضم إلى مجتمعنا الرائع وابدأ في إنقاذ الأرواح . يمكنك أن تصبح بطلاً غير معروف لشخص ما ولكن كل بطل مهم</p>
+                </div>
+                <img src="img/main_box/1.png" alt="people donate with blood">
+            </div>
+
+            <div id="main_box_signIn">
+                <div class="login-box">
+                    <div class="login-form-slider overflow-hidden">
+                        <!-- start login slide -->
+                        <div class="login-slide p-xl-5 py-5 login-slide-padd">
+                            <div class="login-slide-content">
+                                <h3 class="text-gradiant mb-2">تسجيل الدخول</h3>
+                                <form>
+                                    <div class="form-group user-name-field">
+                                        <input type="text" class="form-control" placeholder="البريد الإلكترونى أو الهاتف">
+                                        <div class="field-icon"><i class="fas fa-user"></i></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="كلمة السر">
+                                        <div class="field-icon"><i class="fas fa-key-skeleton"></i></div>
+                                    </div>
+                                    <div class="form-group sign-in-btn">
+                                        <input type="submit" class="submit back-gradient" value="تسجيل الدخول">
+                                    </div>
+                                    <a href="#" class="forgot-password-click text-gradiant">هل نسيت كلمة السر ؟</a>
+                                </form>
+                                <div class="sign-up-txt">
+                                    ليس لديك حساب؟ <a href="#" class="sign-up-click text-gradiant">إنشاء حساب جديد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end login slide -->
+
+                        <!-- start forgot password -->
+                        <div class="forget-slide   p-xl-5 py-5 forget-slide-padd">
+                            <div class="forget-slide-content">
+                                <h3 class="text-gradiant">هل نسيت كلمة السر</h3>
+                                <p>أدخل عنوان بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك</p>
+                                <form>
+                                        <div class="form-group forget-email">
+                                            <input type="email" class=" form-control " placeholder="البريد الإلكترونى">
+                                            <div class="field-icon"><i class="fas fa-envelope-square"></i></div>
+                                            
+                                        </div>
+                                    
+                                    <div class="form-group sign-up-btn">
+                                        <input type="submit" class="send submit back-gradient" value="إرسال">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end forgot password -->
+
+                        <!-- start code -->
+                        <div class="code-slide   p-xl-5 py-5 code-slide-padd">
+                            <div class="code-slide-content">
+                                <h3 class="text-gradiant text-center">هل نسيت كلمة السر</h3>
+                                <p>أدخل الكود الذى تم إرسالة إليك</p>
+                                <form>
+                                    <div class="form-group verify ">
+                                        <input type="number" class="form-control" placeholder="129225">
+                                        <div class="field-icon"><i class="fas fa-code"></i></div>
+                                    </div>
+                                
+                                    <div class="form-group sign-up-btn">
+                                        <input type="button" class="next submit back-gradient " value="التالى">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end code -->
+
+                        <!-- start Change password -->
+                        <div class="changePass-slide   p-xl-5 py-5 changePass-slide-padd">
+                            <div class="changePass-slide-content">
+                                <h3 class="text-gradiant text-center">قم بتغير الرقم السرى</h3>
+                                <form>
+                                    
+                                    <div class="form-group ">
+                                        <input type="password" class="form-control" placeholder="الرقم السرى الحالى">
+                                        <div class="field-icon"><i class="fas fa-key-skeleton"></i></div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <input type="password" class="form-control" placeholder="كلمة السر الجديدة">
+                                        <div class="field-icon"><i class="fas fa-key-skeleton"></i></div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <input type="password" class="form-control" placeholder="تأكيد كلمة السر">
+                                        <div class="field-icon"><i class="fas fa-key-skeleton"></i></div>
+                                    </div>
+                                    
+                                    <div class="form-group sign-up-btn">
+                                        <input type="submit" class="submit back-gradient" value="إرسال">
+                                    </div>
+                                </form>
+                                <div class="sign-in-txt">
+                                    إذا كنت تتذكر كلمة المرور الخاصة بك؟ <a href="#" class="sign-up-click text-gradiant">تسجيل الدخول</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end  Change password -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End -->
+
+        <!-- SignUp -->
+        <section class="hidden visuallyhidden signUp_OR_signUp-d-none sign-Up-box main-box shadow-lg back-gradient-signUp ">
+            <div id="main_box_signUp">
+                <div class="signUp-box">
+                    <div class="login-form-slider overflow-hidden">
+
+                        <!--  start signUp slide -->
+                        <div class="signUp-slide   px-xl-5 py-5 signUp-slide-padd">
+                            <div class="signUp-slide-content">
+                                <h3 class="text-gradiant text-center mb-3">إنشاء حساب جديد</h3>
+                                <form>
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div class="form-group user-name-field mb-0">
+                                            <input type="text" class="form-control" placeholder="أسم العائلة">
+                                            <div class="field-icon"><i class="fas fa-user"></i></div>
+                                        </div>
+                                        <div class="form-group user-name-field mb-0">
+                                            <input type="text" class="form-control" placeholder="الأسم الأول">
+                                            <div class="field-icon"><i class="fas fa-user"></i></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div class="form-group user-ssd-field mb-0">
+                                            <input type="text" class="form-control" placeholder="الرقم القومى">
+                                            <div class="field-icon"><i class="fas fa-id-card"></i></div>
+                                        </div>
+                                        <div class="form-group user-email-field mb-0">
+                                            <input type="email" class="form-control" placeholder="البريد الإلكترونى">
+                                            <div class="field-icon"><i class="fas fa-envelope-square"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div class="form-group mb-0">
+                                            <input type="tel"  id="phone2" class="form-control" name="phone2" placeholder=" 2 رقم الموبايل">
+                                            <div class="field-icon"><i class="fas fa-mobile"></i></div>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input type="tel"  id="phone1" class="form-control" name="phone1" placeholder=" 1 رقم الموبايل">
+                                            <div class="field-icon"><i class="fas fa-mobile"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <div class="form-group user-blood-field mb-0">
+                                            <input list= "blood" id="blood_type" class="form-control"  placeholder="فصيلة الدم">
+                                            <datalist id="blood">
+                                                
+                                            </datalist>
+                                            <input type="hidden" name="answer" id="blood_type-hidden">
+                                            <div class="field-icon"><i class="fas fa-tint"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="sign-up-btn">
+                                        <input type="button" class="btn-next submit back-gradient-signUp" value="التالى">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--  end --signUp slide -->
+
+                        <!--  start signUp slide next values -->
+                        <div class="signUp-slide-next-values   px-xl-5 py-5 signUp-slide-next-values-padd">
+                            <div class="signUp-slide-next-values-content">
+                                <h3 class="text-gradiant text-center mb-3">إنشاء حساب جديد</h3>
+                                <form>
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div class="form-group mb-0">
+                                            <input  list="City" type="text" class="form-control" id="city" name="city" placeholder="حدد مدينتك">
+                                            <div class="field-icon"><i class="fas fa-location-arrow"></i></div>
+                                            <datalist id="City">
+
+                                            </datalist>
+                                            <input type="hidden" name="answer" id="city-hidden">
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input list="Gov" type="text" class="form-control" id="gov" name="gov" placeholder="حدد محافظتك">
+                                            <div class="field-icon"><i class="fas fa-location-arrow"></i></div>
+                                            <datalist id="Gov">
+
+                                            </datalist>
+                                            <input type="hidden" name="answer" id="gov-hidden">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div class="form-group mb-0">
+                                            <input type="date" class="form-control" id="birtday" name="birtday" value="22 / 2 / 2000">
+                                            <div class="field-icon"><i class="fas fa-birthday-cake"></i></div>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input list="gendar" type="text" class="form-control" id="sexType" name="sexType" placeholder="Male">
+                                            <div class="field-icon"><i class="fas fa-user"></i></div>
+                                            <datalist id="gendar">
+
+                                            </datalist>
+                                            <input type="hidden" name="answer" id="sexType-hidden">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div class="form-group mb-0">
+                                            <input type="password" class="form-control" placeholder="تأكيد كلمة السر">
+                                            <div class="field-icon"><i class="fas fa-key-skeleton"></i></div>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input type="password" class="form-control" placeholder="كلمة السر">
+                                            <div class="field-icon"><i class="fas fa-key-skeleton"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="sign-up-btn d-flex flex-wrap">
+                                        <input type="submit" class="submit back-gradient-signUp mb-md-0 mb-2" value="إنشاء حساب"> 
+                                        <input type="button" class="btn-prev submit back-gradient-signUp mb-md-0 mb-2" value="السابق">
+                                    </div>
+                                </form>
+                                <div class="sign-in-txt">
+                                    اذا كان لديك حساب؟ <a href="#" class=" sign-in-click text-gradiant">تسجيل الدخول</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  end  signup slide -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="master-img-signUp d-lg-flex d-none">
+                <div class="title text-white mb-3">
+                    <h3 class="fs-1  mb-2 text-center">حياتكم تهمنا</h3>
+                    <p>انضم إلى مجتمعنا الرائع وابدأ في إنقاذ الأرواح . يمكنك أن تصبح بطلاً غير معروف لشخص ما ولكن كل بطل مهم</p>
+                </div>
+                <img src="img/main_box/1.png" alt="people donate with blood">
+            </div>
+        </section>
+        <!-- End -->
+    </main>
+
+
+    <!-- Start Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-lg-4 col-sm-6 order-lg-1 order-sm-3 order-4">
+                    <div class="items padd">
+                        <h3>اشترك معنا</h3>
+                        <p class="mb-3">اشترك معنا في النشرة الإخبارية المنتظمة وكن على اطلاع بآخر أخبارنا</p>
+                        <form>
+                            <input class="form-control" type="email" placeholder="أدخل بريدك الإلكتروني">
+                            <button class="btn" type="submit">شارك</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 order-lg-2 order-sm-4 order-3">
+                    <div class="items padd ">
+                        <h3>أحدث الأخبار</h3>
+                        <ul class="links list-unstyled">
+                            <li><a href="#">تتسبب حوادث الطرق في حدوث طوارئ دموية</a></li>
+                            <li><a href="#">حقائق مذهلة عن التبرع بالدم</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="items mt-3">
+                        <h3>تحميل التطبيق</h3>
+                        <ul class="links list-unstyled">
+                            <li><a href="#"><img src="img/downloadApps/apple.svg" alt="Download App"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 order-lg-3 order-sm-1 order-2">
+                    <div class="items padd">
+                        <h3>المؤسسة</h3>
+                        <ul class="links list-unstyled">
+                            <li><a href="blood.donation.html">تبرع</a></li>
+                            <li><a href="NewsStory.html">أخبار </a></li>
+                            <li><a href="story.html">قصص</a></li>
+                            <li><a href="about.html">معلومات عنا</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 order-lg-4  order-sm-2 order-1">
+                    <div class="items">
+                        <div class="foot_logo">
+                            <div>
+                                <h3>حياتكم تهمنا</h3>
+                                <small>اتصل</small>
+                            </div>
+                            <img src="img/logo/savelife-light.svg" alt="Savelife_Logo">
+                        </div>
+                        <ul class="links list-unstyled">
+                            <li><a href="login.html">سجل</a></li>
+                            <li><a href="volunteer.html">المتطوعين</a></li>
+                            <li><a href="lifeFeed.html">طلبات دم عاجلة </a></li>
+                            <li><a href="blood_donar.html">البحث عن الدم</a></li>
+                            <li><a href="#">متتبع فيروس كورونا المباشر</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_copyright pt-5">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4">
+                        <div class="foot_links">
+                            <div class="btn-group">
+                                <button class="btn btn-sm dropdown-toggle" id="offcanvasNavbarDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" hidden>
+                                    العربية
+                                </button>
+                                <ul class="dropdown-menu shadow-lg p-0" aria-labelledby="offcanvasNavbarDropdown" >
+                                    <li><a class="dropdown-item rounded" href="#">العربية</a></li>
+                                    <li><a class="dropdown-item rounded" href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fab fa-twitter mx-3"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>                             
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p class="Copyright mb-0">حقوق النشر @ 2021 بنك الدم جميع الحقوق محفوظة | هذا الموقع الذي أنشأه  <a href="#">الفريق</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Btn Up -->
+    <a id="btnUp" type="button" role="button" class="btn   rounded  text-white" ><i class="fas fa-angle-up fs-5 text-white"></i> </a>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/loading_and_Navbar.js"></script>
+</body>

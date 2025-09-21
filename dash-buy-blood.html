@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Buy Blood</title>
+    <meta name="author" content="Omar Elmokhtar" />
+    <meta name="description" content="Blood Bank" />
+    <meta name="keywords" content="html,css,js,jquery" />
+    <!-- Page icon Link -->
+    <link rel="icon" href="img/favicon2.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo&family=Readex+Pro&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/dash-buy-blood.css">
+</head>
+<body>
+
+
+    <section class="dashHistory-navbar ">
+        <div class="logo py-3">
+            <a href="index.html">
+                <div class="text-end">
+                    <h3>حياتكم تهمنا</h3>
+                    <small>اتصل</small>
+                </div>
+                <img src="img/logo/savelife-red.svg" alt="BloodBank_Logo">
+            </a>
+        </div>
+        <div class="position-relative">
+            <nav id="main-nav" class="py-3 shadow">
+                <i class="fas fa-bars d-xl-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+                <ul class="d-flex justify-content-evenly align-items-center d-xl-flex d-none">
+                    <li class="px-3"><a class="fw-bolder" href="dash-favorites.html">مفضلات <i class="fas fa-bookmark text-dark"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="history.html">سجلات <i class="fas fa-history text-dark"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="userStory.html">قصصك <i class="fas fa-box-full text-dark"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="dash-buy-blood.html">شراء الدم <i class="fas fa-tint text-dark"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="dash-make-post.html">طلبات دم عاجلة <i class="fas fa-heartbeat text-dark"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="vacine.html">طلب اللقاح <i class="fas fa-syringe text-dark"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="bloodForm.html">طلب دم عاجل <i class="fas fa-tint text-dark"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder " href="dash-profile.html">الصفحة الشخصية <i class=" fas fa-home text-dark"></i></a></li>
+                </ul>
+            </nav>
+            <nav id="nav-clone" class="py-3 shadow">
+                <i class="fas fa-bars d-xl-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+                <ul class="d-flex justify-content-evenly align-items-center d-xl-flex d-none">
+                    <li class="px-3"><a class="fw-bolder" href="dash-favorites.html">مفضلات <i class="fas fa-bookmark"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="history.html">سجلات <i class="fas fa-history"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="userStory.html">قصصك <i class="fas fa-box-full"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="dash-buy-blood.html">شراء الدم <i class="fas fa-tint"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="dash-make-post.html">طلبات دم عاجلة <i class="fas fa-heartbeat"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="vacine.html">طلب اللقاح <i class="fas fa-syringe"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder" href="bloodForm.html">طلب دم عاجل <i class="fas fa-tint"></i></a></li>
+                    <li class="px-3"><a class="fw-bolder " href="dash-profile.html">الصفحة الشخصية <i class=" fas fa-home"></i></a></li>
+                </ul>
+
+            </nav>
+            <div class="bars d-xl-none d-block">
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header py-2 shadow">
+                        <i class="far fa-times" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></i>    
+                        <div class="logo d-flex align-items-center">
+                            <h3>حياتكم تهمنا</h3>
+                            <img src="img/logo/savelife-red.svg" alt="BloodBank_Logo">
+                        </div>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="canv_links  text-dark mb-5">
+                            <li><a class="" href="dash-profile.html"><i class=" fas fa-home ms-2"></i>الصفحة الشخصية</a></li>
+                            <li><a href="bloodForm.html"><i class="fas fa-tint ms-2"></i>طلب دم عاجل</a></li>
+                            <li><a href="vacine.html"><i class="fas fa-syringe ms-2"></i>طلب اللقاح</a></li>
+                            <li><a href="dash-make-post.html"><i class="fas fa-heartbeat ms-2"></i>طلبات دم عاجلة</a></li>
+                            <li><a href="dash-buy-blood.html"><i class="fas fa-tint ms-2"></i>شراء الدم </a></li>
+                            <li><a href="userStory.html"><i class="fas fa-box-full ms-2"></i>قصصك</a></li>
+                            <li><a href="history.html"><i class="fas fa-history ms-2"></i>سجلات </a></li>
+                            <li><a href="dash-favorites.html"><i class="fas fa-bookmark ms-2"></i>مفضلات </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Loading -->
+    <div class="loading justify-content-center align-items-center">
+        <img src="img/logo/savelife-light.svg" alt="BloodBank_Logo">
+    </div>
+    <!-- End -->
+    
+    <section id="dashHistory">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="main-heading mb-5">
+                        <h2> شراء الدم </h2>
+                        <p class="text-dark">قم بشراء أكياس دم تتوافق مع احتياجاتك في غضون دقائق</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="image"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blood text-end bg-white">
+    
+                            <h4 class="blood-title">مواصفات الدم</h4>
+                            <div class="blood-details p-3">
+                                <div class="blood-info">
+                                    <form>
+                                        <div class="row g-4 justify-content-end flex-row-reverse">
+                                        
+                                            <div class="col-md-6">
+                                                <label for="bloodType">فصيلة الدم</label>
+                                                <div class="form-group mb-0">
+                                                    <input list= "blood-type" type="text" class="form-control" id="bloodType" name="bloodType" placeholder="اختار">
+                                                    <div class="field-icon"><i class="fas fa-tint"></i></div>
+                                                    <datalist id="blood-type">
+
+                                                    </datalist>
+                                                    <input type="hidden" name="answer" id="bloodType-hidden">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="numOfBlood">عدد الأكياس</label>
+                                                <div class="form-group mb-0">
+                                                    <input list= "num-Of-Blood" type="text" class="form-control" id="numOfBlood" name="numOfBlood" placeholder="اختار عدد الأكياس">
+                                                    <div class="field-icon"><i class="fas fa-list-ol"></i></div>
+                                                    <datalist id="num-Of-Blood">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </datalist>
+                                                    <input type="hidden" name="answer" id="numOfBlood-hidden">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="priceOfBlood">سعر الكيس</label>
+                                                <div class="form-group mb-0">
+                                                    <input type="text" class="form-control" id="priceOfBlood" name="priceOfBlood" disabled>
+                                                    <div class="field-icon"><i class="fas fa-money-bill-wave"></i></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="totalPriceOfBlood">السعر الكلى</label>
+                                                <div class="form-group mb-0">
+                                                    <input type="text" class="form-control total-price" id="totalPriceOfBlood" name="totalPriceOfBlood"  disabled>
+                                                    <div class="field-icon"><i class="fas fa-money-check"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5">
+                                            <div class="btns text-center">
+                                                <button id="request" type="button" class="btn btn-send" data-bs-toggle="modal" data-bs-target="#staticBackdrop">إرسال الطلب</button>
+                                            </div>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered justify-content-center">
+                                                <div class="modal-content">
+                                                    <div class="modal-header d-flex align-items-center justify-content-center text-center">
+                                                    <h5 class="modal-title text-white" id="staticBackdropLabel">تقديم طلب</h5>
+                                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                                    </div>
+                                                    <div class="modal-body d-flex align-items-center justify-content-center text-center">
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">رجوع</button>
+                                                    <button type="button" class="btn btn-accept" data-bs-dismiss="modal">قبول</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Start Footer -->
+     <footer class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-lg-4 col-sm-6 order-lg-1 order-sm-3 order-4">
+                    <div class="items padd">
+                        <h3>اشترك معنا</h3>
+                        <p class="mb-3">اشترك معنا في النشرة الإخبارية المنتظمة وكن على اطلاع بآخر أخبارنا</p>
+                        <form>
+                            <input class="form-control" type="email" placeholder="أدخل بريدك الإلكتروني">
+                            <button class="btn" type="submit">شارك</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 order-lg-2 order-sm-4 order-3">
+                    <div class="items padd ">
+                        <h3>أحدث الأخبار</h3>
+                        <ul class="links list-unstyled">
+                            <li><a href="#">تتسبب حوادث الطرق في حدوث طوارئ دموية</a></li>
+                            <li><a href="#">حقائق مذهلة عن التبرع بالدم</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="items mt-3">
+                        <h3>تحميل التطبيق</h3>
+                        <ul class="links list-unstyled">
+                            <li><a href="#"><img src="img/downloadApps/apple.svg" alt="Download App"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 order-lg-3 order-sm-1 order-2">
+                    <div class="items padd">
+                        <h3>المؤسسة</h3>
+                        <ul class="links list-unstyled">
+                            <li><a href="blood.donation.html">تبرع</a></li>
+                            <li><a href="NewsStory.html">أخبار </a></li>
+                            <li><a href="story.html">قصص</a></li>
+                            <li><a href="about.html">معلومات عنا</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 order-lg-4  order-sm-2 order-1">
+                    <div class="items">
+                        <div class="foot_logo">
+                            <div>
+                                <h3>حياتكم تهمنا</h3>
+                                <small>اتصل</small>
+                            </div>
+                            <img src="img/logo/savelife-light.svg" alt="Savelife_Logo">
+                        </div>
+                        <ul class="links list-unstyled">
+                            <li><a href="login.html">سجل</a></li>
+                            <li><a href="volunteer.html">المتطوعين</a></li>
+                            <li><a href="lifeFeed.html">طلبات دم عاجلة </a></li>
+                            <li><a href="blood_donar.html">البحث عن الدم</a></li>
+                            <li><a href="#">متتبع فيروس كورونا المباشر</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_copyright pt-5">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4">
+                        <div class="foot_links">
+                            <div class="btn-group">
+                                <button class="btn btn-sm dropdown-toggle" id="offcanvasNavbarDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" hidden>
+                                    العربية
+                                </button>
+                                <ul class="dropdown-menu shadow-lg p-0" aria-labelledby="offcanvasNavbarDropdown" >
+                                    <li><a class="dropdown-item rounded" href="#">العربية</a></li>
+                                    <li><a class="dropdown-item rounded" href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fab fa-twitter mx-3"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>                             
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p class="Copyright mb-0">حقوق النشر @ 2021 بنك الدم جميع الحقوق محفوظة | هذا الموقع الذي أنشأه  <a href="#">الفريق</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Btn Up -->
+    <a id="btnUp" type="button" role="button" class="btn   rounded  text-white" ><i class="fas fa-angle-up fs-5"></i> </a>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/dash-buy-blood.js"></script>
+    <script src="js/dash-navbar.js"></script>
+    <script src="js/loading_and_Navbar.js"></script>
+</body>
+</html>
+
